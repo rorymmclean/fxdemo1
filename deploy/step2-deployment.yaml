@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "flux_2048-deployment"
+  name: "flux-2048-deployment"
   namespace: "fluxdemo"
 spec:
   replicas: 1
