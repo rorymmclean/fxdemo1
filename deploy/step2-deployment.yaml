@@ -4,26 +4,19 @@ metadata:
   name: "flux-2048-deployment"
   namespace: "fluxdemo"
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: "2048"
+      app: "flux2048"
   template:
     metadata:
       labels:
-        app: "2048"
+        app: "flux2048"
     spec:
       restartPolicy: Always  
       containers:
       - image: rorymcleanaderas/docker-2048:old
         imagePullPolicy: Always
-        name: "2048"
+        name: "flux2048"
         ports:
         - containerPort: 80
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 80
-          failureThreshold: 1
-          initialDelaySeconds: 5
-          periodSeconds: 5
