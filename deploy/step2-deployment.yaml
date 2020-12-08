@@ -4,7 +4,7 @@ metadata:
   name: "flux-2048-deployment"
   namespace: "fluxdemo"
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: "flux2048"
