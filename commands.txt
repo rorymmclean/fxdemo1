@@ -1,0 +1,5 @@
+docker tag alexwhen/docker-2048:latest rorymcleanaderas/docker-2048:latest
+
+docker build -t rorymcleanaderas/docker-2048:yellow .
+
+docker push rorymcleanaderas/docker-2048:yellow
