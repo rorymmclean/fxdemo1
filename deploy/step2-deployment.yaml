@@ -16,7 +16,7 @@ spec:
     spec:
       restartPolicy: Always  
       containers:
-      - image: rorymcleanaderas/docker-2048:yellow
+      - image: rorymcleanaderas/docker-2048:pink
         imagePullPolicy: Always
         name: "flux2048"
         ports:
